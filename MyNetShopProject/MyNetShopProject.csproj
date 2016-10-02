@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE999ECF-D448-4CC6-82A1-8B2A6F1845B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyNetShopProject</RootNamespace>
+    <AssemblyName>MyNetShopProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Extensions, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Web, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Client.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Client.UserProfiles, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Client.WorkflowServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Linq, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Security, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Taxonomy.Intl, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStocksProductsWebPart\AddStocksProductsWebPart.cs" />
+    <Compile Include="ChoseAvailableOperationsWebPart\ChoseAvailableOperationsWebPart.cs" />
+    <Compile Include="DeliveriesFormWebPart\DeliveriesFormWebPart.cs" />
+    <Compile Include="Features\RegisterWebConfigModificationsFeature\RegisterWebConfigModificationsFeature.EventReceiver.cs">
+      <DependentUpon>RegisterWebConfigModificationsFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="OrderField.cs" />
+    <Compile Include="OrderFieldControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recievers\CitiesReciever\CitiesReciever.cs" />
+    <Compile Include="Recievers\ClientsReciever\ClientsReciever.cs" />
+    <Compile Include="Recievers\CouriersReciever\CouriersReciever.cs" />
+    <Compile Include="Recievers\DeliveriesReceiver\DeliveriesReceiver.cs" />
+    <Compile Include="Recievers\OrdersReciever\OrdersReciever.cs" />
+    <Compile Include="Recievers\OrdersStatusesReciever\OrdersStatusesReciever.cs" />
+    <Compile Include="Recievers\ProductsCategoriesReciever\ProductsCategoriesReciever.cs" />
+    <Compile Include="Recievers\ProductsReciever\ProductsReciever.cs" />
+    <Compile Include="Recievers\StocksProductsReciever\StocksProductsReciever.cs" />
+    <Compile Include="Recievers\StocksReciever\StocksReciever.cs" />
+    <Compile Include="SalesCountWebPart\SalesCountWebPart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddStocksProductsWebPart\AddStocksProductsWebPart.webpart" />
+    <None Include="AddStocksProductsWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{79ed2131-7b1b-434c-979a-71ad3f229fb0}</SharePointProjectItemId>
+    </None>
+    <None Include="ChoseAvailableOperationsWebPart\ChoseAvailableOperationsWebPart.webpart" />
+    <None Include="ChoseAvailableOperationsWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4a4b2aab-9e5a-46ed-bde3-c703b3cbe99a}</SharePointProjectItemId>
+    </None>
+    <None Include="DeliveriesFormWebPart\DeliveriesFormWebPart.webpart" />
+    <None Include="DeliveriesFormWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8bb7f7f1-80f2-4ab6-9798-b045a3b54c17}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\RegisterWebConfigModificationsFeature\RegisterWebConfigModificationsFeature.feature">
+      <FeatureId>{19dfb102-18db-4611-8037-8cf20c79e9f3}</FeatureId>
+    </None>
+    <None Include="Features\WebPartFeature\WebPartFeature.feature">
+      <FeatureId>{db3dd2bc-fcc4-4891-afa7-cceba60217dc}</FeatureId>
+    </None>
+    <None Include="Features\RecieversFeature\RecieversFeature.feature">
+      <FeatureId>{51cc18ed-1689-46f0-ba4e-40d2f4d0d6df}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ae391a0-703e-4578-8311-81d59ee34365}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e487f678-26f7-42ad-9711-fad2b7228d39}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{0fc3b25f-7c23-4fe5-a79b-4b8e9566e2c8}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Recievers\CitiesReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d42c0606-40d7-4015-9f07-7273804b88a4}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\ClientsReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4b949e74-fa78-4161-b093-c2e0a0375f4f}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\CouriersReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{97e17e60-3022-4605-bc07-c040535070b0}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\DeliveriesReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1069243-178f-4708-a497-93ade14495c9}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\OrdersReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{203e7dac-3359-4458-a48a-e056cf46e7dc}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\OrdersStatusesReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1f87bb49-1809-484f-a5b7-74a3b7cf9f48}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\ProductsCategoriesReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f202820c-2995-4764-8ea5-8cf93c4845ad}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\ProductsReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cc507787-13bf-4b5e-a0cd-c322ad41bcf3}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\StocksProductsReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca906672-c5bf-4929-a1c1-6cf23ff2eb5a}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\StocksReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{165addea-78a6-473f-a900-9e30b847b035}</SharePointProjectItemId>
+    </None>
+    <None Include="SalesCountWebPart\SalesCountWebPart.webpart" />
+    <None Include="SalesCountWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d71ba57-4351-4fbd-8c06-18ae6c5d3efd}</SharePointProjectItemId>
+    </None>
+    <None Include="XML\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9dc8ea70-7740-43a7-9828-7edc4e1c54a2}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AddStocksProductsWebPart\Elements.xml" />
+    <Content Include="ChoseAvailableOperationsWebPart\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DeliveriesFormWebPart\Elements.xml" />
+    <Content Include="Features\RegisterWebConfigModificationsFeature\RegisterWebConfigModificationsFeature.Template.xml">
+      <DependentUpon>RegisterWebConfigModificationsFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebPartFeature\WebPartFeature.Template.xml">
+      <DependentUpon>WebPartFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\RecieversFeature\RecieversFeature.Template.xml">
+      <DependentUpon>RecieversFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\MyNetShopProject\Categories.png" />
+    <Content Include="Images\MyNetShopProject\Cities.png" />
+    <Content Include="Images\MyNetShopProject\Clients.png" />
+    <Content Include="Images\MyNetShopProject\Couriers.png" />
+    <Content Include="Images\MyNetShopProject\Deliveries.png" />
+    <Content Include="Images\MyNetShopProject\Orders.png" />
+    <Content Include="Images\MyNetShopProject\Products.png" />
+    <Content Include="Images\MyNetShopProject\Statuses.png" />
+    <Content Include="Images\MyNetShopProject\Storages.png" />
+    <Content Include="Layouts\MyNetShopProject\Scripts\Buttons.css" />
+    <Content Include="Layouts\MyNetShopProject\Scripts\DropDown.css" />
+    <Content Include="Recievers\CitiesReciever\Elements.xml" />
+    <Content Include="Recievers\ClientsReciever\Elements.xml" />
+    <Content Include="Recievers\CouriersReciever\Elements.xml" />
+    <Content Include="Recievers\DeliveriesReceiver\Elements.xml" />
+    <Content Include="Recievers\OrdersReciever\Elements.xml" />
+    <Content Include="Recievers\OrdersStatusesReciever\Elements.xml" />
+    <Content Include="Recievers\ProductsCategoriesReciever\Elements.xml" />
+    <Content Include="Recievers\ProductsReciever\Elements.xml" />
+    <Content Include="Recievers\StocksProductsReciever\Elements.xml" />
+    <Content Include="Recievers\StocksReciever\Elements.xml" />
+    <Content Include="SalesCountWebPart\Elements.xml" />
+    <Content Include="XML\Fldtypes_OrderField.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

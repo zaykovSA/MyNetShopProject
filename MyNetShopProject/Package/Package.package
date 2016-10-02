@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0fc3b25f-7c23-4fe5-a79b-4b8e9566e2c8" solutionId="0fc3b25f-7c23-4fe5-a79b-4b8e9566e2c8" resetWebServer="false" sharePointProductVersion="15.0" name="MyNetShopProject" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="51cc18ed-1689-46f0-ba4e-40d2f4d0d6df" />
+    <featureReference itemId="db3dd2bc-fcc4-4891-afa7-cceba60217dc" />
+    <featureReference itemId="19dfb102-18db-4611-8037-8cf20c79e9f3" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="6ae391a0-703e-4578-8311-81d59ee34365" />
+    <projectItemReference itemId="e487f678-26f7-42ad-9711-fad2b7228d39" />
+    <projectItemReference itemId="9dc8ea70-7740-43a7-9828-7edc4e1c54a2" />
+  </projectItems>
+</package>

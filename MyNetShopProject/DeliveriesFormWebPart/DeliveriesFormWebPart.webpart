@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="MyNetShopProject.DeliveriesFormWebPart.DeliveriesFormWebPart, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">MyNetShopProject - DeliveriesFormWebPart</property>
+        <property name="Description" type="string">Моя веб-часть</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

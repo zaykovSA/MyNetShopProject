@@ -1,0 +1,8 @@
+﻿select {
+    border-radius: 5px;
+    width: 100%;
+}
+
+select::-ms-expand {
+    display: none;
+}
